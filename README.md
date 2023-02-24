@@ -11,14 +11,14 @@ To build docker image:
 
 To build and run linux:
 
-    docker run -v ${pwd}:/app/linux --rm -it simple-linux build
+    docker run -v $(pwd):/app/linux --rm -it simple-linux build
 
 To run Simple Linux if you have allready built it:
 
-    docker run -v ${pwd}:/app/linux --rm -it simple-linux start
+    docker run -v $(pwd):/app/linux --rm -it simple-linux start
 
 To build image for writing to flash disk:
 
-    docker run -v ${pwd}:/app/linux --privileged --rm -it simple-linux image
+    docker run -v $(pwd):/app/linux --privileged --rm -it simple-linux image
 
 You must built linux before it.
